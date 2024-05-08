@@ -1,0 +1,33 @@
+.nav{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navigation {
+    ul{
+        display: flex;
+    }
+    li:not(:last-child){
+        margin-right: 42px;
+       
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+         &:hover{
+            color: $accent-color;
+          
+              }
+        &.active{
+        color: $accent-color;
+        font-weight: 700;
+          }
+    }
+    
+}
